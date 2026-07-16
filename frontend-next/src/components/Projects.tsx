@@ -20,7 +20,7 @@ export default function Projects() {
 
   // This runs automatically when the page loads to grab the data from Django!
   useEffect(() => {
-    fetch("http://localhost:8001/api/projects/")
+    fetch("https://portfolio-backend-6r2o.onrender.com/api/projects/")
       .then((response) => response.json())
       .then((data) => {
         setProjects(data);

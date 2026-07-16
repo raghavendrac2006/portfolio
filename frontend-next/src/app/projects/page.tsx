@@ -19,7 +19,7 @@ export default function ProjectsPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:8001/api/projects/")
+    fetch("https://portfolio-backend-6r2o.onrender.com/api/projects/")
       .then((response) => response.json())
       .then((data) => {
         setProjects(data);
