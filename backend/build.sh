@@ -9,3 +9,6 @@ python manage.py migrate
 
 # Create a superuser automatically if environment variables are provided
 python manage.py createsuperuser --noinput || true
+
+# Automatically load the old projects into the new database
+python manage.py loaddata projects.json
